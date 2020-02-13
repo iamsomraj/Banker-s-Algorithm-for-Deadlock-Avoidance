@@ -98,16 +98,25 @@ class App {
     System.out.println("\nProcess execution: \n");
     int i = 0;
     int flag = 0;
+    int cur = flag;
     while (numberOfProcess != 0) {
+      if (i == 0) {
+        cur = flag;
+      }
+
       if (flag == numberOfProcess) {
         System.out.println("\nSafe state has been reached !\n\n");
         return;
       }
 
-      if (i == numberOfProcess)
+      if (i == numberOfProcess) {
         i = 0;
+        if (cur == flag) {
+          System.out.println("\nDeadlock is detected !\n\n\n");
+          return;
+        }
+      }
 
-      
       int count = 0;
       for (int j = 0; j < numberOfResource; j++) {
 
