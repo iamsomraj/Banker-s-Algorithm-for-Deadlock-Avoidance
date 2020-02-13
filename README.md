@@ -1,7 +1,6 @@
 # Banker's Algorithm for Deadlock Avoidance
 Banker's Algorithm for Deadlock Avoidance is a simple take on deadlock detection which helps to visualize the steps. This code is in Java, later I might try other languages also.
 
-[![Run on Repl.it](https://repl.it/badge/github/iamsomraj/Banker-s-Algorithm-for-Deadlock-Avoidance)](https://repl.it/github/iamsomraj/Banker-s-Algorithm-for-Deadlock-Avoidance)
 
 ## Objectives
 
